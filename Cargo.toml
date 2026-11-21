@@ -1,0 +1,12 @@
+[package]
+name="concierge"
+version="0.1.0"
+edition="2024"
+rust-version="1.94"
+
+[dependencies]
+#async runtime
+tokio={version="1.52", features=["rt-multi-thread", "macros", "net", "signal", "time", "sync"]}
+async-trait="0.1"
+futures="0.3"
+futures-core="0.3"
