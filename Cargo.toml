@@ -6,7 +6,11 @@ rust-version="1.94"
 
 [dependencies]
 #async runtime
-tokio={version="1.52", features=["rt-multi-thread", "macros", "net", "signal", "time", "sync"]}
+tokio={version="1.52", features=["rt-multi-thread", "macros", "net", "signal", "time", "sync", "io-util"]}
 async-trait="0.1"
 futures="0.3"
 futures-core="0.3"
+#tools
+pgwire={version="0.42", default-features=false, features=["server-api"]}
+arrow-array="59"
+arrow-schema="59"
